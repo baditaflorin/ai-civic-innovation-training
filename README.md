@@ -16,7 +16,7 @@ publishes maps, audits, tools and games built with AI tools from public records.
 
 1. A one-minute warm-up game
 2. A five-step recipe: sharp question, public data, AI as builder, something people use, honest limits
-3. Seven live demos, each with a "Ghana remix" based on data that exists for Ghana
+3. Seven live demos, each with a "Ghana remix" based on data that exists for Ghana, then five shorter extra examples (air sensors, a river from space, distance to a service, redoing the sums, timing a wait)
 4. Five habits that make a civic project trustworthy
 5. A 30-minute team exercise: design the Ghanaian version of one project
 
