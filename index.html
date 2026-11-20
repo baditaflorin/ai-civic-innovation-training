@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI for Civic Innovation &amp; Public Problem-Solving</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..700&family=Space+Grotesk:wght@400..700&display=swap" rel="stylesheet">
+<style>
+html,body{margin:0;height:100%;background:#0B1728;overflow:hidden}
+#stage{position:absolute;left:50%;top:50%;width:1920px;height:1080px;transform-origin:center center}
+#stage>section{position:absolute;inset:0;width:1920px;height:1080px;box-sizing:border-box;overflow:hidden;visibility:hidden;opacity:0;transition:opacity .25s}
+#stage>section.on{visibility:visible;opacity:1}
+#bar{position:fixed;left:0;right:0;bottom:0;display:flex;gap:12px;align-items:center;justify-content:center;padding:10px;font:600 15px Inter,system-ui,sans-serif;color:#F6F1E7;background:rgba(11,23,40,.72)}
+#bar button{font:inherit;color:#10243E;background:#F2A65A;border:0;border-radius:8px;padding:8px 16px;cursor:pointer}
+#bar button:focus-visible{outline:3px solid #fff}
+section{padding:128px;background:#F6F1E7;color:#10243E;font-family:'Inter',sans-serif;display:flex;flex-direction:column}
+section.dark{background:#10243E;color:#F6F1E7}
+section.accent{background:#E8772E;color:#10243E}
+h1{font-family:'Space Grotesk',sans-serif;font-size:112px;line-height:1.05;font-weight:700;margin:0}
+h2{font-family:'Space Grotesk',sans-serif;font-size:64px;line-height:1.1;font-weight:700;margin:0}
+h3{font-family:'Space Grotesk',sans-serif;font-size:36px;line-height:1.2;font-weight:700;margin:0}
+p{margin:0;font-size:32px;line-height:1.4}
+a{color:#1B4FB8;text-decoration:underline}
+.dark a{color:#F2A65A}
+.accent a{color:#10243E}
+.kicker{font-size:24px;line-height:1.25;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#A8470B;margin-bottom:24px}
+.dark .kicker{color:#F2A65A}
+.accent .kicker{color:#10243E}
+.grow{flex:1}
+.bar{width:240px;height:16px;background:#E8772E;margin-bottom:56px}
+.cover .sub{font-size:40px;line-height:1.35;margin-top:48px;width:1300px}
+.center .sub{font-size:40px;line-height:1.35;margin-top:48px;width:1300px}
+.meta{font-size:28px;line-height:1.4}
+.split{display:flex;flex-direction:row;gap:84px;margin-top:48px}
+.fact{width:800px;display:flex;flex-direction:column}
+.side{width:780px;display:flex;flex-direction:column;gap:24px}
+.num{font-family:'Space Grotesk',sans-serif;font-size:160px;line-height:1.1;font-weight:700;color:#A8470B}
+.lede{font-size:32px;line-height:1.4}
+.wide{width:1500px;margin-top:32px}
+.open{font-size:30px;line-height:1.4;font-weight:700;margin-top:28px}
+.card{background:#FFFDF8;border:2px solid #10243E;border-radius:16px;padding:24px 28px;display:flex;flex-direction:column;gap:8px}
+.card .body{font-size:28px;line-height:1.4}
+.remix{background:#10243E;color:#F6F1E7}
+.strong{background:#10243E;color:#F6F1E7}
+.huge{font-family:'Space Grotesk',sans-serif;font-size:260px;line-height:1;font-weight:700}
+.stat h2{width:1400px;margin-top:8px}
+.trio{display:flex;flex-direction:row;gap:48px}
+.cell{width:522px;border-top:4px solid #10243E;padding-top:20px}
+.mid{font-family:'Space Grotesk',sans-serif;font-size:80px;line-height:1.1;font-weight:700}
+.cap{font-size:28px;line-height:1.35}
+.foot{font-size:24px;line-height:1.3;margin-top:32px}
+.steps{display:flex;flex-direction:row;gap:24px;margin-top:72px}
+.timeline{display:flex;flex-direction:row;gap:24px;margin-top:56px}
+.step{flex:1;background:#FFFDF8;border:2px solid #10243E;border-radius:16px;padding:28px;display:flex;flex-direction:column;gap:12px}
+.step .stepn{font-family:'Space Grotesk',sans-serif;font-size:72px;line-height:1.1;font-weight:700;color:#A8470B}
+.timeline .step .stepn{font-size:56px}
+.step .body{font-size:28px;line-height:1.4}
+.grid6{display:grid;grid-template-columns:1fr 1fr 1fr;gap:28px;margin-top:56px}
+.grid6 .mid{color:#A8470B}
+.tag{font-family:'Space Grotesk',sans-serif;font-size:36px;line-height:1.2;font-weight:700;color:#A8470B}
+.grid4{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:56px}
+.grid4 .card{padding:28px 32px;gap:12px}
+.grid4 .list{font-size:28px;line-height:1.45}
+.rows{display:flex;flex-direction:column;margin-top:48px}
+.row{display:flex;flex-direction:row;gap:40px;align-items:center;border-top:2px solid #3A4D6B;padding:20px 0}
+.rown{font-family:'Space Grotesk',sans-serif;font-size:56px;line-height:1.1;font-weight:700;color:#F2A65A;width:60px}
+.rowt{font-size:32px;line-height:1.35}
+.two{display:flex;flex-direction:row;gap:48px;margin-top:56px}
+.two .card{flex:1;padding:36px 40px;gap:20px}
+.list{margin:0;padding-left:36px;font-size:30px;line-height:1.5}
+.promptbox{background:#F6F1E7;color:#10243E;border-radius:16px;padding:40px 48px;margin-top:48px;display:flex;flex-direction:column;gap:20px}
+.mono{font-family:'Inter',sans-serif;font-size:30px;line-height:1.4;font-weight:500}
+.note{font-size:30px;line-height:1.4;margin-top:36px;color:#F2A65A;font-weight:700}
+.center{justify-content:center}
+
+</style></head><body>
+<div id="stage">
+<section id="cover" class="dark cover" data-transition="fade">
+<div class="bar"></div>
+<p class="kicker">Youth Civic Lab · Session 7</p>
+<h1>AI for Civic Innovation &amp; Public Problem-Solving</h1>
+<p class="sub">One curious person, public data and an AI assistant: what you can build for your community.</p>
+<div class="grow"></div>
+<p class="meta">Friday 20 November 2026 · 5:00 PM Accra · Mentor: Florin</p>
+</section>
+<section id="play" class="play" data-transition="fade">
+<p class="kicker">Warm-up · 60 seconds · on your phone</p>
+<h2>Play first: where in the world thinks like you?</h2>
+<div class="split">
+<div class="fact">
+<p class="num">6</p>
+<p class="lede">driverless-car dilemmas. Your answers are compared with three moral clusters from MIT's Moral Machine study: about 40 million decisions.</p>
+<p class="open"><a href="https://mariuscomper.uk/moral-atlas/en/">Open Moral Atlas →</a></p>
+</div>
+<div class="side">
+<div class="card"><h3>Do this now</h3><p class="body">Answer the six dilemmas, then type your cluster in the chat: Western, Eastern or Southern.</p></div>
+<div class="card remix"><h3>Notice</h3><p class="body">No login. Nothing sent to a server. One minute. And you just learned something about public values.</p></div>
+</div>
+</div>
+</section>
+<section id="one-person" class="accent stat" data-transition="fade">
+<p class="kicker">Who made that?</p>
+<p class="huge">1,702</p>
+<h2>public projects by one person, Marius Comper, built with AI tools.</h2>
+<div class="grow"></div>
+<div class="trio">
+<div class="cell"><p class="mid">277</p><p class="cap">on government, money and public life</p></div>
+<div class="cell"><p class="mid">195</p><p class="cap">investigations and audits from public records</p></div>
+<div class="cell"><p class="mid">74</p><p class="cap">published on his busiest single day</p></div>
+</div>
+<p class="foot"><a href="https://mariuscomper.uk/en/">mariuscomper.uk/en</a> · counts as shown on the site on 20 November 2026</p>
+</section>
+<section id="recipe" data-transition="fade">
+<p class="kicker">The pattern behind every project</p>
+<h2>A five-step recipe you can copy</h2>
+<div class="steps">
+<div class="step"><p class="stepn">1</p><h3>A sharp question</h3><p class="body">One sentence, with a number in the answer.</p></div>
+<div class="step"><p class="stepn">2</p><h3>Public data</h3><p class="body">Budgets, contracts, timetables, maps, laws.</p></div>
+<div class="step"><p class="stepn">3</p><h3>AI as builder</h3><p class="body">Reads, cleans, counts and writes the code.</p></div>
+<div class="step"><p class="stepn">4</p><h3>A thing people use</h3><p class="body">Map, checker, game or audit, not a PDF.</p></div>
+<div class="step"><p class="stepn">5</p><h3>Honest limits</h3><p class="body">Sources, dates, and what it cannot tell you.</p></div>
+</div>
+</section>
+<section id="formats" data-transition="fade">
+<p class="kicker">Six ways to answer a public question</p>
+<h2>Pick the format that fits the problem</h2>
+<div class="grid6">
+<div class="card"><p class="mid">377</p><h3>Maps and data atlases</h3><p class="body">Where is it, and where is it missing?</p></div>
+<div class="card"><p class="mid">195</p><h3>Investigations and audits</h3><p class="body">Does the record match the promise?</p></div>
+<div class="card"><p class="mid">136</p><h3>Guides and tools</h3><p class="body">What am I owed? What do I do next?</p></div>
+<div class="card"><p class="mid">434</p><h3>Simulations and models</h3><p class="body">What happens if we change this?</p></div>
+<div class="card"><p class="mid">102</p><h3>Games and tests</h3><p class="body">Feel the problem in one minute.</p></div>
+<div class="card"><p class="mid">363</p><h3>Articles and explainers</h3><p class="body">One study, made readable.</p></div>
+</div>
+</section>
+<section id="demo-money" class="demo" data-transition="fade">
+<p class="kicker">Live demo 1 · Follow the money</p>
+<h2>Who wins the town hall&#39;s contracts?</h2>
+<div class="split">
+<div class="fact">
+<p class="num">3,082</p>
+<p class="lede">of 3,187 Romanian town halls gave contracts to firms reporting no employees: 1.17 billion lei between July 2023 and September 2026.</p>
+<p class="open"><a href="https://mariuscomper.uk/firme-fara-angajati/en/">Open the contracts list →</a></p>
+</div>
+<div class="side">
+<div class="card"><h3>Ask the room</h3><p class="body">What was the question? Why does it matter that the list covers every commune and town, not just one scandal?</p></div>
+<div class="card remix"><h3>Ghana remix</h3><p class="body">GHANEPS lists awarded contracts, free to download. But the regulator&#39;s own review found fewer than one in seven awards was published. Is your assembly&#39;s there?</p></div>
+</div>
+</div>
+</section>
+<section id="demo-service" class="demo" data-transition="fade">
+<p class="kicker">Live demo 2 · Measure the service</p>
+<h2>How fast does the bus actually move?</h2>
+<div class="split">
+<div class="fact">
+<p class="num">12.3 km/h</p>
+<p class="lede">Real speed of Bucharest buses, trams and trolleybuses at the evening peak, measured from vehicle positions on Monday 26 October 2026.</p>
+<p class="open"><a href="https://mariuscomper.uk/viteza-reala-autobuze/en/">Open the bus speed project →</a></p>
+</div>
+<div class="side">
+<div class="card"><h3>Ask the room</h3><p class="body">The timetable says one thing, the street says another. Who benefits when somebody measures the gap?</p></div>
+<div class="card remix"><h3>Ghana remix</h3><p class="body">No GPS on trotros, but the routes are open data: 270+ lines and 4,000+ stops mapped in OpenStreetMap. Which neighbourhoods are far from any stop?</p></div>
+</div>
+</div>
+</section>
+<section id="demo-rights" class="demo" data-transition="fade">
+<p class="kicker">Live demo 3 · Turn a rule into a tool</p>
+<h2>The power went out. What are you owed?</h2>
+<div class="split">
+<div class="fact">
+<p class="num">4 · 6 · 12</p>
+<p class="lede">hours: the outage limits for county seats, other towns and villages in Romania. Past the limit, 30 lei is due. The checker does the maths.</p>
+<p class="open"><a href="https://mariuscomper.uk/compensatie-pana-de-curent-calculator-anre/en/">Open the outage checker →</a></p>
+</div>
+<div class="side">
+<div class="card"><h3>Ask the room</h3><p class="body">The rule already existed. What changed when it became a calculator instead of a paragraph in a regulation?</p></div>
+<div class="card remix"><h3>Ghana remix</h3><p class="body">Researchers call ECG&#39;s outage records patchy. But NASA&#39;s night-lights satellite passes every night, and it is already used to spot dumsor in Accra.</p></div>
+</div>
+</div>
+</section>
+<section id="demo-map" class="demo" data-transition="fade">
+<p class="kicker">Live demo 4 · Map what exists</p>
+<h2>Where is the nearest public toilet?</h2>
+<div class="split">
+<div class="fact">
+<p class="num">Free</p>
+<p class="lede">data from OpenStreetMap: access, fees, wheelchair access and opening hours. Where a detail is missing, the map says &quot;not recorded&quot; instead of guessing.</p>
+<p class="open"><a href="https://mariuscomper.uk/toaleta-pe-drum/en/">Open the toilets map →</a></p>
+</div>
+<div class="side">
+<div class="card"><h3>Ask the room</h3><p class="body">Why is it more honest, and more useful, to show unknown than to leave a gap or fill it with a guess?</p></div>
+<div class="card remix"><h3>Ghana remix</h3><p class="body">The 2021 census counts households with no toilet in every district: 1.48 million nationwide. OpenStreetMap already holds Accra&#39;s drains, clinics and schools.</p></div>
+</div>
+</div>
+</section>
+<section id="demo-promise" class="demo" data-transition="fade">
+<p class="kicker">Live demo 5 · Check the promise</p>
+<h2>The law promised six months&#39; notice. What happened?</h2>
+<div class="split">
+<div class="fact">
+<p class="num">3 days</p>
+<p class="lede">or less: that is how fast 113 of the 149 acts changing Romania&#39;s tax code since 2016 took effect. Only 4 of 78 laws gave the promised six months.</p>
+<p class="open"><a href="https://mariuscomper.uk/sase-luni-de-preaviz/en/">Open the tax notice audit →</a></p>
+</div>
+<div class="side">
+<div class="card"><h3>Ask the room</h3><p class="body">Nobody hid this. Every act was public. So why did nobody know the number until somebody counted?</p></div>
+<div class="card remix"><h3>Ghana remix</h3><p class="body">The Auditor-General reports on the district assemblies every year, as PDFs. AI reads PDFs. What was flagged in your district, and was it ever fixed?</p></div>
+</div>
+</div>
+</section>
+<section id="demo-personal" class="demo" data-transition="fade">
+<p class="kicker">Live demo 6 · Find Ghana in it</p>
+<h2>How much of Ghana&#39;s plate started somewhere else?</h2>
+<div class="split">
+<div class="fact">
+<p class="num">67%</p>
+<p class="lede">of Ghana&#39;s food supply depends on crops that originated in other world regions: the midpoint of the page&#39;s range, from UN food data for 177 countries.</p>
+<p class="open"><a href="https://mariuscomper.uk/radacinile-farfuriei/en/">Open Roots beneath the plate →</a></p>
+</div>
+<div class="side">
+<div class="card"><h3>Ask the room</h3><p class="body">Pick Ghana in the country list, then pick a crop you ate today. Where did it come from? What surprised you?</p></div>
+<div class="card remix"><h3>Ghana remix</h3><p class="body">Global datasets already include Ghana: NASA, the UN, the World Bank, OpenStreetMap. Start there before you ask anyone for data.</p></div>
+</div>
+</div>
+</section>
+<section id="demo-borrow" class="demo" data-transition="fade">
+<p class="kicker">Live demo 7 · Borrow what worked</p>
+<h2>Taiwan turned the tax receipt into a lottery ticket</h2>
+<div class="split">
+<div class="fact">
+<p class="num">1951</p>
+<p class="lede">Receipt numbers were entered in prize draws, so customers asked for receipts. Business-tax revenue went from over NT$29 million to over NT$51 million in a year.</p>
+<p class="open"><a href="https://mariuscomper.uk/loteria-bonurilor/en/">Open the receipt lottery story →</a></p>
+</div>
+<div class="side">
+<div class="card"><h3>Ask the room</h3><p class="body">No AI and no app in 1951. What was the actual innovation here?</p></div>
+<div class="card remix"><h3>Ghana remix</h3><p class="body">Which idea from another country would you test in your own district first, and how would you know it worked?</p></div>
+</div>
+</div>
+</section>
+<section id="trust" class="dark" data-transition="fade">
+<p class="kicker">Why would anyone believe you?</p>
+<h2>Five habits to copy from these projects</h2>
+<div class="rows">
+<div class="row"><p class="rown">1</p><p class="rowt"><b>Name the source.</b> NASA, OpenStreetMap, the public register. Let people check you.</p></div>
+<div class="row"><p class="rown">2</p><p class="rowt"><b>Put a date on it.</b> Data ages. Say when you measured and when you updated.</p></div>
+<div class="row"><p class="rown">3</p><p class="rowt"><b>Show unknown as unknown.</b> A gap is information. A guess is a risk.</p></div>
+<div class="row"><p class="rown">4</p><p class="rowt"><b>Say what it cannot tell you.</b> A pattern in data is not proof about one person.</p></div>
+<div class="row"><p class="rown">5</p><p class="rowt"><b>Count everything, not one case.</b> A full list is fairer than a single scandal.</p></div>
+</div>
+</section>
+<section id="roles" data-transition="fade">
+<p class="kicker">Division of labour</p>
+<h2>What the AI does, and what stays with you</h2>
+<div class="two">
+<div class="card"><h3>Let the AI do</h3>
+<ul class="list"><li>Read 300 pages and find the rule</li><li>Clean a messy table or scanned list</li><li>Write the code for a map or calculator</li><li>Draft, translate and simplify</li></ul></div>
+<div class="card strong"><h3>You stay in charge of</h3>
+<ul class="list"><li>Choosing a question that matters here</li><li>Checking every number against the source</li><li>Protecting people&#39;s names and privacy</li><li>Deciding what is fair to publish</li></ul></div>
+</div>
+</section>
+<section id="break" class="accent center" data-transition="fade">
+<p class="kicker">Break · 5 minutes</p>
+<h1>Back in five.</h1>
+<p class="sub">While you stretch: what is one public problem within 500 metres of your home?</p>
+</section>
+<section id="exercise" data-transition="fade">
+<p class="kicker">Team exercise · 30 minutes</p>
+<h2>Remix it for Ghana</h2>
+<p class="lede wide">Take one demo, or your own problem, and design the Ghanaian version using data that already exists or that you can collect with a phone. You are writing the plan someone could build tomorrow.</p>
+<div class="timeline">
+<div class="step"><p class="stepn">3 min</p><h3>Brief</h3><p class="body">Teams of 4 or 5. Pick a note-taker and a speaker.</p></div>
+<div class="step"><p class="stepn">15 min</p><h3>Build the card</h3><p class="body">Fill the six boxes. Use any AI chatbot as a partner.</p></div>
+<div class="step"><p class="stepn">10 min</p><h3>Pitch</h3><p class="body">60 seconds per team. Question first, then the format.</p></div>
+<div class="step"><p class="stepn">2 min</p><h3>Vote</h3><p class="body">In chat: which one should exist by next month?</p></div>
+</div>
+</section>
+<section id="ghana" data-transition="fade">
+<p class="kicker">What Ghana already has</p>
+<h2>Four places the data is waiting</h2>
+<div class="grid4">
+<div class="card"><h3>From space</h3>
+<ul class="list"><li>NASA night lights: where the power goes out</li><li>Sentinel-2 photos: galamsey, floods, new buildings</li><li>NASA temperature and rainfall records</li></ul></div>
+<div class="card"><h3>From the crowd</h3>
+<ul class="list"><li>OpenStreetMap: roads, clinics, schools, drains</li><li>Trotro routes: 270+ lines, 4,000+ stops</li><li>Breathe Accra: 50+ live air sensors</li></ul></div>
+<div class="card"><h3>From the state</h3>
+<ul class="list"><li>2021 census, district by district</li><li>GHANEPS: tenders and awarded contracts</li><li>Auditor-General reports, as PDFs</li></ul></div>
+<div class="card strong"><h3>From your phone</h3>
+<ul class="list"><li>Time it, count it, photograph it, date it</li><li>Poll your WhatsApp group and tally it</li><li>Ask officially: Right to Information Act, 2019</li></ul></div>
+</div>
+</section>
+<section id="card" data-transition="fade">
+<p class="kicker">Your one-page civic project card</p>
+<h2>Six boxes. Fifteen minutes.</h2>
+<div class="grid6">
+<div class="card"><p class="tag">1 · Problem</p><p class="body">What goes wrong, where, and for whom?</p></div>
+<div class="card"><p class="tag">2 · Question</p><p class="body">One sentence, with a number in the answer.</p></div>
+<div class="card"><p class="tag">3 · Data</p><p class="body">Space, crowd, state or your phone: which one has it?</p></div>
+<div class="card"><p class="tag">4 · Format</p><p class="body">Map, checker, audit, game, simulation or explainer?</p></div>
+<div class="card"><p class="tag">5 · User</p><p class="body">Who opens it, on what phone, and what do they do next?</p></div>
+<div class="card"><p class="tag">6 · Risk</p><p class="body">What could be wrong or unfair, and how will you check?</p></div>
+</div>
+</section>
+<section id="prompt" class="dark" data-transition="fade">
+<p class="kicker">Starter prompt · paste into any AI chatbot</p>
+<h2>Make the AI your project partner</h2>
+<div class="promptbox">
+<p class="mono">Act as a civic data partner. My community problem is: [problem, place].</p>
+<p class="mono">Help me turn it into one question with a number in the answer. Suggest three public data sources I could check, the best format (map, checker, audit, game or simulation), and what could mislead people.</p>
+<p class="mono">Do not invent numbers. Tell me exactly what I must verify myself.</p>
+</div>
+<p class="note">Then push back: ask it what is wrong with its own answer.</p>
+</section>
+<section id="close" class="dark cover" data-transition="fade">
+<div class="bar"></div>
+<p class="kicker">Before you go</p>
+<h1>One question. One dataset. One page.</h1>
+<p class="sub">This week, finish your team&#39;s card and build the smallest version with an AI assistant. Then send it to somebody who can use it.</p>
+<div class="grow"></div>
+<p class="meta">Explore more: <a href="https://mariuscomper.uk/en/public-life/">mariuscomper.uk/en/public-life</a> · Send him an idea: <a href="https://mariuscomper.uk/en/collaborate/">mariuscomper.uk/en/collaborate</a></p>
+</section>
+
+</div>
+<div id="bar"><button id="prev" aria-label="Previous slide">← Prev</button><span id="n" aria-live="polite"></span><button id="next" aria-label="Next slide">Next →</button></div>
+<script>
+const S=[...document.querySelectorAll('#stage>section')],st=document.getElementById('stage'),n=document.getElementById('n');let i=0;
+function fit(){const k=Math.min(innerWidth/1920,(innerHeight-52)/1080);st.style.transform='translate(-50%,calc(-50% - 26px)) scale('+k+')'}
+function show(k,push){i=Math.max(0,Math.min(S.length-1,k));S.forEach((s,j)=>s.classList.toggle('on',j===i));n.textContent=(i+1)+' / '+S.length;if(push!==false)history.replaceState(null,'','#'+S[i].id)}
+document.getElementById('prev').onclick=()=>show(i-1);document.getElementById('next').onclick=()=>show(i+1);
+addEventListener('keydown',e=>{if(['ArrowRight','PageDown',' '].includes(e.key)){e.preventDefault();show(i+1)}if(['ArrowLeft','PageUp'].includes(e.key)){e.preventDefault();show(i-1)}if(e.key==='Home')show(0);if(e.key==='End')show(S.length-1)});
+let x0=null;addEventListener('touchstart',e=>x0=e.touches[0].clientX,{passive:true});addEventListener('touchend',e=>{if(x0===null)return;const dx=e.changedTouches[0].clientX-x0;if(Math.abs(dx)>50)show(i+(dx<0?1:-1));x0=null});
+addEventListener('resize',fit);addEventListener('hashchange',()=>{const k=S.findIndex(s=>'#'+s.id===location.hash);if(k>=0)show(k,false)});
+fit();const k0=S.findIndex(s=>'#'+s.id===location.hash);show(k0>=0?k0:0,false);
+</script></body></html>
