@@ -2,6 +2,10 @@
 
 Slides for Session 7 of the Youth Civic Lab (Ghana), 20 November 2026.
 
+Presented by Florin Badita · [baditaflorin@gmail.com](mailto:baditaflorin@gmail.com) · [linkedin.com/in/baditaflorin](https://www.linkedin.com/in/baditaflorin)
+
+Live: https://dda-training.badita.org
+
 Open `index.html` in a browser. Use the arrow keys, the buttons, or swipe on a phone.
 
 ## What the session covers
