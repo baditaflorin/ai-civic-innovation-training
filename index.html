@@ -33,7 +33,7 @@ a{color:#1B4FB8;text-decoration:underline}
 .split{display:flex;flex-direction:row;gap:84px;margin-top:48px}
 .fact{width:800px;display:flex;flex-direction:column}
 .side{width:780px;display:flex;flex-direction:column;gap:24px}
-.num{font-family:'Space Grotesk',sans-serif;font-size:160px;line-height:1.1;font-weight:700;color:#A8470B}
+.num{font-family:'Space Grotesk',sans-serif;font-size:120px;line-height:1.1;font-weight:700;color:#A8470B}
 .lede{font-size:32px;line-height:1.4}
 .wide{width:1500px;margin-top:32px}
 .open{font-size:30px;line-height:1.4;font-weight:700;margin-top:28px}
@@ -48,8 +48,8 @@ a{color:#1B4FB8;text-decoration:underline}
 .mid{font-family:'Space Grotesk',sans-serif;font-size:80px;line-height:1.1;font-weight:700}
 .cap{font-size:28px;line-height:1.35}
 .foot{font-size:24px;line-height:1.3;margin-top:32px}
-.steps{display:flex;flex-direction:row;gap:24px;margin-top:72px}
-.timeline{display:flex;flex-direction:row;gap:24px;margin-top:56px}
+.steps{display:flex;flex-direction:row;gap:24px;margin-top:64px}
+.timeline{display:flex;flex-direction:row;gap:24px;margin-top:24px}
 .step{flex:1;background:#FFFDF8;border:2px solid #10243E;border-radius:16px;padding:28px;display:flex;flex-direction:column;gap:12px}
 .step .stepn{font-family:'Space Grotesk',sans-serif;font-size:72px;line-height:1.1;font-weight:700;color:#A8470B}
 .timeline .step .stepn{font-size:56px}
@@ -61,7 +61,7 @@ a{color:#1B4FB8;text-decoration:underline}
 .grid4 .card{padding:28px 32px;gap:12px}
 .grid4 .list{font-size:28px;line-height:1.45}
 .rows{display:flex;flex-direction:column;margin-top:48px}
-.row{display:flex;flex-direction:row;gap:40px;align-items:center;border-top:2px solid #3A4D6B;padding:20px 0}
+.row{display:flex;flex-direction:row;gap:32px;align-items:center;border-top:2px solid #3A4D6B;padding:16px 0}
 .rown{font-family:'Space Grotesk',sans-serif;font-size:56px;line-height:1.1;font-weight:700;color:#F2A65A;width:60px}
 .rowt{font-size:32px;line-height:1.35}
 .two{display:flex;flex-direction:row;gap:48px;margin-top:56px}
@@ -71,6 +71,31 @@ a{color:#1B4FB8;text-decoration:underline}
 .mono{font-family:'Inter',sans-serif;font-size:30px;line-height:1.4;font-weight:500}
 .note{font-size:30px;line-height:1.4;margin-top:36px;color:#F2A65A;font-weight:700}
 .center{justify-content:center}
+.tile{width:104px;height:104px;border-radius:26px;background:#E8772E;display:flex;align-items:center;justify-content:center}
+.tile.sm{width:64px;height:64px;border-radius:16px}
+.tile.navy{background:#10243E}
+.chead{display:flex;flex-direction:row;align-items:center;gap:20px}
+.numrow{display:flex;flex-direction:row;align-items:center;gap:28px;margin-bottom:20px}
+.chart{display:flex;flex-direction:column;gap:12px;margin-bottom:20px}
+.hrow{display:flex;flex-direction:row;align-items:center;gap:16px}
+.hl{width:200px;font-size:26px;line-height:1.25;font-weight:600}
+.hbar{height:32px;border-radius:8px;background:#E8772E}
+.hv{font-family:'Space Grotesk',sans-serif;font-size:30px;line-height:1.2;font-weight:700}
+.ptrack{width:760px;height:28px;border-radius:14px;background:#E3D8C3;display:flex;flex-direction:row;overflow:hidden}
+.pfill{height:28px;background:#E8772E}
+.pl{font-size:26px;line-height:1.3;font-weight:600}
+.frows{display:flex;flex-direction:column;gap:14px;margin-top:40px}
+.frow{display:flex;flex-direction:row;align-items:center;gap:24px}
+.fname{width:640px;display:flex;flex-direction:column}
+.frow .cap{font-size:26px}
+.strip{display:flex;flex-direction:row;gap:20px;margin-bottom:36px}
+.timebar{display:flex;flex-direction:row;gap:8px;margin-top:36px}
+.seg{height:28px;border-radius:8px}
+.s1{background:#F2A65A}
+.s2{background:#E8772E}
+.s3{background:#A8470B}
+.s4{background:#10243E}
+.center .tile{margin-bottom:40px}
 
 </style></head><body>
 <div id="stage">
@@ -80,6 +105,7 @@ a{color:#1B4FB8;text-decoration:underline}
 <h1>AI for Civic Innovation &amp; Public Problem-Solving</h1>
 <p class="sub">One curious person, public data and an AI assistant: what you can build for your community.</p>
 <div class="grow"></div>
+<div class="strip"><div class="tile sm"><svg aria-label="map icon" width="36" height="36" viewBox="0 0 36 36" fill="none"><g transform="scale(1.5)" stroke="#10243E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6l6-2 6 2 6-2v14l-6 2-6-2-6 2z"/><path d="M9 4v14M15 6v14"/></g></svg></div><div class="tile sm"><svg aria-label="search icon" width="36" height="36" viewBox="0 0 36 36" fill="none"><g transform="scale(1.5)" stroke="#10243E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5"/></g></svg></div><div class="tile sm"><svg aria-label="checklist icon" width="36" height="36" viewBox="0 0 36 36" fill="none"><g transform="scale(1.5)" stroke="#10243E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6l1.5 1.5L8 5M11 6h9M4 12l1.5 1.5L8 11M11 12h9M4 18l1.5 1.5L8 17M11 18h9"/></g></svg></div><div class="tile sm"><svg aria-label="sliders icon" width="36" height="36" viewBox="0 0 36 36" fill="none"><g transform="scale(1.5)" stroke="#10243E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h9M19 6h1M4 12h3M13 12h7M4 18h11"/><circle cx="16" cy="6" r="2"/><circle cx="10" cy="12" r="2"/><circle cx="18" cy="18" r="2"/></g></svg></div><div class="tile sm"><svg aria-label="dice icon" width="36" height="36" viewBox="0 0 36 36" fill="none"><g transform="scale(1.5)" stroke="#10243E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M9 9h.01M15 9h.01M12 12h.01M9 15h.01M15 15h.01"/></g></svg></div><div class="tile sm"><svg aria-label="doc icon" width="36" height="36" viewBox="0 0 36 36" fill="none"><g transform="scale(1.5)" stroke="#10243E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5M10 13h6M10 17h6"/></g></svg></div></div>
 <p class="meta">Friday 20 November 2026 · 5:00 PM Accra · Mentor: Florin Badita</p>
 </section>
 <section id="play" class="play" data-transition="fade">
@@ -87,13 +113,14 @@ a{color:#1B4FB8;text-decoration:underline}
 <h2>Play first: where in the world thinks like you?</h2>
 <div class="split">
 <div class="fact">
-<p class="num">6</p>
-<p class="lede">driverless-car dilemmas. Your answers are compared with three moral clusters from MIT's Moral Machine study: about 40 million decisions.</p>
+<div class="numrow"><div class="tile"><svg aria-label="phone icon" width="60" height="60" viewBox="0 0 60 60" fill="none"><g transform="scale(2.5)" stroke="#10243E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></g></svg></div><p class="num">6</p></div>
+
+<p class="lede">driverless-car dilemmas, compared with three moral clusters from MIT's Moral Machine study: about 40 million decisions.</p>
 <p class="open"><a href="https://mariuscomper.uk/moral-atlas/en/">Open Moral Atlas →</a></p>
 </div>
 <div class="side">
-<div class="card"><h3>Do this now</h3><p class="body">Answer the six dilemmas, then type your cluster in the chat: Western, Eastern or Southern.</p></div>
-<div class="card remix"><h3>Notice</h3><p class="body">No login. Nothing sent to a server. One minute. And you just learned something about public values.</p></div>
+<div class="card"><div class="chead"><svg aria-label="cursor icon" width="44" height="44" viewBox="0 0 44 44" fill="none"><g transform="scale(1.83333)" stroke="#A8470B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3l12 9-5.5 1L15 19l-2.5 1-2.5-6L6 17z"/></g></svg><h3>Do this now</h3></div><p class="body">Answer the six dilemmas. Type your cluster in the chat: Western, Eastern or Southern.</p></div>
+<div class="card remix"><div class="chead"><svg aria-label="shield icon" width="44" height="44" viewBox="0 0 44 44" fill="none"><g transform="scale(1.83333)" stroke="#F2A65A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 5-3 8.5-7 10-4-1.5-7-5-7-10V6z"/><path d="M9 12l2 2 4-4"/></g></svg><h3>Notice</h3></div><p class="body">No login. Nothing sent to a server. One minute.</p></div>
 </div>
 </div>
 </section>
@@ -103,9 +130,9 @@ a{color:#1B4FB8;text-decoration:underline}
 <h2>public projects by one person, Marius Comper, built with AI tools.</h2>
 <div class="grow"></div>
 <div class="trio">
-<div class="cell"><p class="mid">277</p><p class="cap">on government, money and public life</p></div>
-<div class="cell"><p class="mid">195</p><p class="cap">investigations and audits from public records</p></div>
-<div class="cell"><p class="mid">74</p><p class="cap">published on his busiest single day</p></div>
+<div class="cell"><div class="chead"><div class="tile sm navy"><svg aria-label="building icon" width="36" height="36" viewBox="0 0 36 36" fill="none"><g transform="scale(1.5)" stroke="#F6F1E7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V10M19 21V10M9 21V10M15 21V10"/><path d="M2 10l10-6 10 6z"/></g></svg></div><p class="mid">277</p></div><p class="cap">on government, money and public life</p></div>
+<div class="cell"><div class="chead"><div class="tile sm navy"><svg aria-label="search icon" width="36" height="36" viewBox="0 0 36 36" fill="none"><g transform="scale(1.5)" stroke="#F6F1E7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5"/></g></svg></div><p class="mid">195</p></div><p class="cap">investigations and audits from public records</p></div>
+<div class="cell"><div class="chead"><div class="tile sm navy"><svg aria-label="calendar icon" width="36" height="36" viewBox="0 0 36 36" fill="none"><g transform="scale(1.5)" stroke="#F6F1E7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></g></svg></div><p class="mid">74</p></div><p class="cap">published on his busiest single day</p></div>
 </div>
 <p class="foot"><a href="https://mariuscomper.uk/en/">mariuscomper.uk/en</a> · counts as shown on the site on 20 November 2026</p>
 </section>
@@ -113,37 +140,39 @@ a{color:#1B4FB8;text-decoration:underline}
 <p class="kicker">The pattern behind every project</p>
 <h2>A five-step recipe you can copy</h2>
 <div class="steps">
-<div class="step"><p class="stepn">1</p><h3>A sharp question</h3><p class="body">One sentence, with a number in the answer.</p></div>
-<div class="step"><p class="stepn">2</p><h3>Public data</h3><p class="body">Budgets, contracts, timetables, maps, laws.</p></div>
-<div class="step"><p class="stepn">3</p><h3>AI as builder</h3><p class="body">Reads, cleans, counts and writes the code.</p></div>
-<div class="step"><p class="stepn">4</p><h3>A thing people use</h3><p class="body">Map, checker, game or audit, not a PDF.</p></div>
-<div class="step"><p class="stepn">5</p><h3>Honest limits</h3><p class="body">Sources, dates, and what it cannot tell you.</p></div>
+<div class="step"><div class="chead"><div class="tile sm"><svg aria-label="question icon" width="36" height="36" viewBox="0 0 36 36" fill="none"><g transform="scale(1.5)" stroke="#10243E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.7.4-1 1-1 1.7"/><path d="M12 17h.01"/></g></svg></div><p class="stepn">1</p></div><h3>A sharp question</h3><p class="body">One sentence, with a number in the answer.</p></div>
+<div class="step"><div class="chead"><div class="tile sm"><svg aria-label="database icon" width="36" height="36" viewBox="0 0 36 36" fill="none"><g transform="scale(1.5)" stroke="#10243E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="6" rx="7" ry="3"/><path d="M5 6v12c0 1.7 3.1 3 7 3s7-1.3 7-3V6"/><path d="M5 12c0 1.7 3.1 3 7 3s7-1.3 7-3"/></g></svg></div><p class="stepn">2</p></div><h3>Public data</h3><p class="body">Budgets, contracts, timetables, maps, laws.</p></div>
+<div class="step"><div class="chead"><div class="tile sm"><svg aria-label="robot icon" width="36" height="36" viewBox="0 0 36 36" fill="none"><g transform="scale(1.5)" stroke="#10243E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="8" width="14" height="11" rx="2"/><path d="M12 4v4M9.5 13h.01M14.5 13h.01M10 16h4M2.5 12v3M21.5 12v3"/></g></svg></div><p class="stepn">3</p></div><h3>AI as builder</h3><p class="body">Reads, cleans, counts and writes the code.</p></div>
+<div class="step"><div class="chead"><div class="tile sm"><svg aria-label="cursor icon" width="36" height="36" viewBox="0 0 36 36" fill="none"><g transform="scale(1.5)" stroke="#10243E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3l12 9-5.5 1L15 19l-2.5 1-2.5-6L6 17z"/></g></svg></div><p class="stepn">4</p></div><h3>A thing people use</h3><p class="body">Map, checker, game or audit, not a PDF.</p></div>
+<div class="step"><div class="chead"><div class="tile sm"><svg aria-label="shield icon" width="36" height="36" viewBox="0 0 36 36" fill="none"><g transform="scale(1.5)" stroke="#10243E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 5-3 8.5-7 10-4-1.5-7-5-7-10V6z"/><path d="M9 12l2 2 4-4"/></g></svg></div><p class="stepn">5</p></div><h3>Honest limits</h3><p class="body">Sources, dates, and what it cannot tell you.</p></div>
 </div>
 </section>
 <section id="formats" data-transition="fade">
 <p class="kicker">Six ways to answer a public question</p>
 <h2>Pick the format that fits the problem</h2>
-<div class="grid6">
-<div class="card"><p class="mid">377</p><h3>Maps and data atlases</h3><p class="body">Where is it, and where is it missing?</p></div>
-<div class="card"><p class="mid">195</p><h3>Investigations and audits</h3><p class="body">Does the record match the promise?</p></div>
-<div class="card"><p class="mid">136</p><h3>Guides and tools</h3><p class="body">What am I owed? What do I do next?</p></div>
-<div class="card"><p class="mid">434</p><h3>Simulations and models</h3><p class="body">What happens if we change this?</p></div>
-<div class="card"><p class="mid">102</p><h3>Games and tests</h3><p class="body">Feel the problem in one minute.</p></div>
-<div class="card"><p class="mid">363</p><h3>Articles and explainers</h3><p class="body">One study, made readable.</p></div>
+<div class="frows">
+<div class="frow"><div class="tile sm"><svg aria-label="map icon" width="36" height="36" viewBox="0 0 36 36" fill="none"><g transform="scale(1.5)" stroke="#10243E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6l6-2 6 2 6-2v14l-6 2-6-2-6 2z"/><path d="M9 4v14M15 6v14"/></g></svg></div><div class="fname"><h3>Maps and data atlases</h3><p class="cap">Where is it, and where is it missing?</p></div><div class="hbar" style="width:486px"></div><p class="hv">377</p></div>
+<div class="frow"><div class="tile sm"><svg aria-label="search icon" width="36" height="36" viewBox="0 0 36 36" fill="none"><g transform="scale(1.5)" stroke="#10243E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5"/></g></svg></div><div class="fname"><h3>Investigations and audits</h3><p class="cap">Does the record match the promise?</p></div><div class="hbar" style="width:252px"></div><p class="hv">195</p></div>
+<div class="frow"><div class="tile sm"><svg aria-label="checklist icon" width="36" height="36" viewBox="0 0 36 36" fill="none"><g transform="scale(1.5)" stroke="#10243E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6l1.5 1.5L8 5M11 6h9M4 12l1.5 1.5L8 11M11 12h9M4 18l1.5 1.5L8 17M11 18h9"/></g></svg></div><div class="fname"><h3>Guides and tools</h3><p class="cap">What am I owed? What do I do next?</p></div><div class="hbar" style="width:175px"></div><p class="hv">136</p></div>
+<div class="frow"><div class="tile sm"><svg aria-label="sliders icon" width="36" height="36" viewBox="0 0 36 36" fill="none"><g transform="scale(1.5)" stroke="#10243E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h9M19 6h1M4 12h3M13 12h7M4 18h11"/><circle cx="16" cy="6" r="2"/><circle cx="10" cy="12" r="2"/><circle cx="18" cy="18" r="2"/></g></svg></div><div class="fname"><h3>Simulations and models</h3><p class="cap">What happens if we change this?</p></div><div class="hbar" style="width:560px"></div><p class="hv">434</p></div>
+<div class="frow"><div class="tile sm"><svg aria-label="dice icon" width="36" height="36" viewBox="0 0 36 36" fill="none"><g transform="scale(1.5)" stroke="#10243E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M9 9h.01M15 9h.01M12 12h.01M9 15h.01M15 15h.01"/></g></svg></div><div class="fname"><h3>Games and tests</h3><p class="cap">Feel the problem in one minute.</p></div><div class="hbar" style="width:132px"></div><p class="hv">102</p></div>
+<div class="frow"><div class="tile sm"><svg aria-label="doc icon" width="36" height="36" viewBox="0 0 36 36" fill="none"><g transform="scale(1.5)" stroke="#10243E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5M10 13h6M10 17h6"/></g></svg></div><div class="fname"><h3>Articles and explainers</h3><p class="cap">One study, made readable.</p></div><div class="hbar" style="width:468px"></div><p class="hv">363</p></div>
 </div>
+<p class="foot">Bars: projects of each format on mariuscomper.uk, as shown on 20 November 2026</p>
 </section>
 <section id="demo-money" class="demo" data-transition="fade">
 <p class="kicker">Live demo 1 · Follow the money</p>
-<h2>Who wins the town hall&#39;s contracts?</h2>
+<h2>Who wins the town hall's contracts?</h2>
 <div class="split">
 <div class="fact">
-<p class="num">3,082</p>
-<p class="lede">of 3,187 Romanian town halls gave contracts to firms reporting no employees: 1.17 billion lei between July 2023 and September 2026.</p>
+<div class="numrow"><div class="tile"><svg aria-label="coins icon" width="60" height="60" viewBox="0 0 60 60" fill="none"><g transform="scale(2.5)" stroke="#10243E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="9" r="6"/><path d="M15.5 9.5a6 6 0 1 1-6 6"/></g></svg></div><p class="num">3,082</p></div>
+<div class="chart"><div class="ptrack"><div class="pfill" style="width:735px"></div></div><p class="pl">of 3,187 Romanian town halls</p></div>
+<p class="lede">gave contracts to firms reporting no employees: 1.17 billion lei, July 2023 to September 2026.</p>
 <p class="open"><a href="https://mariuscomper.uk/firme-fara-angajati/en/">Open the contracts list →</a></p>
 </div>
 <div class="side">
-<div class="card"><h3>Ask the room</h3><p class="body">What was the question? Why does it matter that the list covers every commune and town, not just one scandal?</p></div>
-<div class="card remix"><h3>Ghana remix</h3><p class="body">GHANEPS lists awarded contracts, free to download. But the regulator&#39;s own review found fewer than one in seven awards was published. Is your assembly&#39;s there?</p></div>
+<div class="card"><div class="chead"><svg aria-label="question icon" width="44" height="44" viewBox="0 0 44 44" fill="none"><g transform="scale(1.83333)" stroke="#A8470B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.7.4-1 1-1 1.7"/><path d="M12 17h.01"/></g></svg><h3>Ask the room</h3></div><p class="body">Why does it matter that the list covers every town hall, not just one scandal?</p></div>
+<div class="card remix"><div class="chead"><svg aria-label="star icon" width="44" height="44" viewBox="0 0 44 44" fill="none"><g transform="scale(1.83333)" stroke="#F2A65A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.7 5.6 6.1.8-4.5 4.3 1.1 6.1L12 16.9 6.6 19.8l1.1-6.1L3.2 9.4l6.1-.8z"/></g></svg><h3>Ghana remix</h3></div><p class="body">GHANEPS lists awarded contracts, free to download. Its regulator found fewer than one in seven awards was published. Is your assembly's there?</p></div>
 </div>
 </div>
 </section>
@@ -152,13 +181,14 @@ a{color:#1B4FB8;text-decoration:underline}
 <h2>How fast does the bus actually move?</h2>
 <div class="split">
 <div class="fact">
-<p class="num">12.3 km/h</p>
-<p class="lede">Real speed of Bucharest buses, trams and trolleybuses at the evening peak, measured from vehicle positions on Monday 26 October 2026.</p>
+<div class="numrow"><div class="tile"><svg aria-label="bus icon" width="60" height="60" viewBox="0 0 60 60" fill="none"><g transform="scale(2.5)" stroke="#10243E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="13" rx="2"/><path d="M4 11h16M8 17v2M16 17v2"/><path d="M8 14h.01M16 14h.01"/></g></svg></div><p class="num">12.3 km/h</p></div>
+
+<p class="lede">Real evening-peak speed of Bucharest buses, trams and trolleybuses, from vehicle positions on Monday 26 October 2026.</p>
 <p class="open"><a href="https://mariuscomper.uk/viteza-reala-autobuze/en/">Open the bus speed project →</a></p>
 </div>
 <div class="side">
-<div class="card"><h3>Ask the room</h3><p class="body">The timetable says one thing, the street says another. Who benefits when somebody measures the gap?</p></div>
-<div class="card remix"><h3>Ghana remix</h3><p class="body">No GPS on trotros, but the routes are open data: 270+ lines and 4,000+ stops mapped in OpenStreetMap. Which neighbourhoods are far from any stop?</p></div>
+<div class="card"><div class="chead"><svg aria-label="question icon" width="44" height="44" viewBox="0 0 44 44" fill="none"><g transform="scale(1.83333)" stroke="#A8470B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.7.4-1 1-1 1.7"/><path d="M12 17h.01"/></g></svg><h3>Ask the room</h3></div><p class="body">The timetable says one thing, the street another. Who gains when somebody measures the gap?</p></div>
+<div class="card remix"><div class="chead"><svg aria-label="star icon" width="44" height="44" viewBox="0 0 44 44" fill="none"><g transform="scale(1.83333)" stroke="#F2A65A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.7 5.6 6.1.8-4.5 4.3 1.1 6.1L12 16.9 6.6 19.8l1.1-6.1L3.2 9.4l6.1-.8z"/></g></svg><h3>Ghana remix</h3></div><p class="body">Trotro routes are open data: 270+ lines and 4,000+ stops in OpenStreetMap. Which neighbourhoods are far from any stop?</p></div>
 </div>
 </div>
 </section>
@@ -167,13 +197,18 @@ a{color:#1B4FB8;text-decoration:underline}
 <h2>The power went out. What are you owed?</h2>
 <div class="split">
 <div class="fact">
-<p class="num">4 · 6 · 12</p>
-<p class="lede">hours: the outage limits for county seats, other towns and villages in Romania. Past the limit, 30 lei is due. The checker does the maths.</p>
+<div class="numrow"><div class="tile"><svg aria-label="bolt icon" width="60" height="60" viewBox="0 0 60 60" fill="none"><g transform="scale(2.5)" stroke="#10243E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></g></svg></div><p class="num">30 lei</p></div>
+<div class="chart">
+<div class="hrow"><p class="hl">County seats</p><div class="hbar" style="width:140px"></div><p class="hv">4 hours</p></div>
+<div class="hrow"><p class="hl">Other towns</p><div class="hbar" style="width:210px"></div><p class="hv">6 hours</p></div>
+<div class="hrow"><p class="hl">Villages</p><div class="hbar" style="width:420px"></div><p class="hv">12 hours</p></div>
+</div>
+<p class="lede">is due in Romania once an outage passes the limit. The checker does the maths.</p>
 <p class="open"><a href="https://mariuscomper.uk/compensatie-pana-de-curent-calculator-anre/en/">Open the outage checker →</a></p>
 </div>
 <div class="side">
-<div class="card"><h3>Ask the room</h3><p class="body">The rule already existed. What changed when it became a calculator instead of a paragraph in a regulation?</p></div>
-<div class="card remix"><h3>Ghana remix</h3><p class="body">Researchers call ECG&#39;s outage records patchy. But NASA&#39;s night-lights satellite passes every night, and it is already used to spot dumsor in Accra.</p></div>
+<div class="card"><div class="chead"><svg aria-label="question icon" width="44" height="44" viewBox="0 0 44 44" fill="none"><g transform="scale(1.83333)" stroke="#A8470B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.7.4-1 1-1 1.7"/><path d="M12 17h.01"/></g></svg><h3>Ask the room</h3></div><p class="body">The rule already existed. What changed when it became a calculator?</p></div>
+<div class="card remix"><div class="chead"><svg aria-label="star icon" width="44" height="44" viewBox="0 0 44 44" fill="none"><g transform="scale(1.83333)" stroke="#F2A65A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.7 5.6 6.1.8-4.5 4.3 1.1 6.1L12 16.9 6.6 19.8l1.1-6.1L3.2 9.4l6.1-.8z"/></g></svg><h3>Ghana remix</h3></div><p class="body">Researchers call ECG's outage records patchy. But NASA's night-lights satellite passes every night, and it is already used to spot dumsor in Accra.</p></div>
 </div>
 </div>
 </section>
@@ -182,43 +217,47 @@ a{color:#1B4FB8;text-decoration:underline}
 <h2>Where is the nearest public toilet?</h2>
 <div class="split">
 <div class="fact">
-<p class="num">Free</p>
-<p class="lede">data from OpenStreetMap: access, fees, wheelchair access and opening hours. Where a detail is missing, the map says &quot;not recorded&quot; instead of guessing.</p>
+<div class="numrow"><div class="tile"><svg aria-label="pin icon" width="60" height="60" viewBox="0 0 60 60" fill="none"><g transform="scale(2.5)" stroke="#10243E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></g></svg></div><p class="num">Free</p></div>
+
+<p class="lede">OpenStreetMap data: access, fees, wheelchair access, opening hours. A missing detail shows as "not recorded", never as a guess.</p>
 <p class="open"><a href="https://mariuscomper.uk/toaleta-pe-drum/en/">Open the toilets map →</a></p>
 </div>
 <div class="side">
-<div class="card"><h3>Ask the room</h3><p class="body">Why is it more honest, and more useful, to show unknown than to leave a gap or fill it with a guess?</p></div>
-<div class="card remix"><h3>Ghana remix</h3><p class="body">The 2021 census counts households with no toilet in every district: 1.48 million nationwide. OpenStreetMap already holds Accra&#39;s drains, clinics and schools.</p></div>
+<div class="card"><div class="chead"><svg aria-label="question icon" width="44" height="44" viewBox="0 0 44 44" fill="none"><g transform="scale(1.83333)" stroke="#A8470B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.7.4-1 1-1 1.7"/><path d="M12 17h.01"/></g></svg><h3>Ask the room</h3></div><p class="body">Why is showing "unknown" more honest, and more useful, than a gap or a guess?</p></div>
+<div class="card remix"><div class="chead"><svg aria-label="star icon" width="44" height="44" viewBox="0 0 44 44" fill="none"><g transform="scale(1.83333)" stroke="#F2A65A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.7 5.6 6.1.8-4.5 4.3 1.1 6.1L12 16.9 6.6 19.8l1.1-6.1L3.2 9.4l6.1-.8z"/></g></svg><h3>Ghana remix</h3></div><p class="body">The 2021 census counts households with no toilet in every district: 1.48 million nationwide. OpenStreetMap already holds Accra's drains, clinics and schools.</p></div>
 </div>
 </div>
 </section>
 <section id="demo-promise" class="demo" data-transition="fade">
 <p class="kicker">Live demo 5 · Check the promise</p>
-<h2>The law promised six months&#39; notice. What happened?</h2>
+<h2>The law promised six months' notice. What happened?</h2>
 <div class="split">
 <div class="fact">
-<p class="num">3 days</p>
-<p class="lede">or less: that is how fast 113 of the 149 acts changing Romania&#39;s tax code since 2016 took effect. Only 4 of 78 laws gave the promised six months.</p>
+<div class="numrow"><div class="tile"><svg aria-label="clipboard icon" width="60" height="60" viewBox="0 0 60 60" fill="none"><g transform="scale(2.5)" stroke="#10243E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="4" width="14" height="18" rx="2"/><rect x="9" y="2" width="6" height="4" rx="1"/><path d="M9 13l2 2 4-4"/></g></svg></div><p class="num">3 days</p></div>
+<div class="chart"><div class="ptrack"><div class="pfill" style="width:576px"></div></div><p class="pl">113 of 149 changes took effect in 3 days or less</p></div>
+<div class="chart"><div class="ptrack"><div class="pfill" style="width:39px"></div></div><p class="pl">4 of 78 laws gave the promised six months</p></div>
+<p class="lede">Romania's tax code, every change since 2016, counted.</p>
 <p class="open"><a href="https://mariuscomper.uk/sase-luni-de-preaviz/en/">Open the tax notice audit →</a></p>
 </div>
 <div class="side">
-<div class="card"><h3>Ask the room</h3><p class="body">Nobody hid this. Every act was public. So why did nobody know the number until somebody counted?</p></div>
-<div class="card remix"><h3>Ghana remix</h3><p class="body">The Auditor-General reports on the district assemblies every year, as PDFs. AI reads PDFs. What was flagged in your district, and was it ever fixed?</p></div>
+<div class="card"><div class="chead"><svg aria-label="question icon" width="44" height="44" viewBox="0 0 44 44" fill="none"><g transform="scale(1.83333)" stroke="#A8470B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.7.4-1 1-1 1.7"/><path d="M12 17h.01"/></g></svg><h3>Ask the room</h3></div><p class="body">Every act was public. Why did nobody know the number until somebody counted?</p></div>
+<div class="card remix"><div class="chead"><svg aria-label="star icon" width="44" height="44" viewBox="0 0 44 44" fill="none"><g transform="scale(1.83333)" stroke="#F2A65A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.7 5.6 6.1.8-4.5 4.3 1.1 6.1L12 16.9 6.6 19.8l1.1-6.1L3.2 9.4l6.1-.8z"/></g></svg><h3>Ghana remix</h3></div><p class="body">The Auditor-General reports on the district assemblies every year, as PDFs. AI reads PDFs. What was flagged in your district, and was it ever fixed?</p></div>
 </div>
 </div>
 </section>
 <section id="demo-personal" class="demo" data-transition="fade">
 <p class="kicker">Live demo 6 · Find Ghana in it</p>
-<h2>How much of Ghana&#39;s plate started somewhere else?</h2>
+<h2>How much of Ghana's plate started somewhere else?</h2>
 <div class="split">
 <div class="fact">
-<p class="num">67%</p>
-<p class="lede">of Ghana&#39;s food supply depends on crops that originated in other world regions: the midpoint of the page&#39;s range, from UN food data for 177 countries.</p>
+<div class="numrow"><div class="tile"><svg aria-label="globe icon" width="60" height="60" viewBox="0 0 60 60" fill="none"><g transform="scale(2.5)" stroke="#10243E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c3 3 3 15 0 18c-3-3-3-15 0-18z"/></g></svg></div><p class="num">67%</p></div>
+<div class="chart"><div class="ptrack"><div class="pfill" style="width:509px"></div></div><p class="pl">share of Ghana's food supply</p></div>
+<p class="lede">of Ghana's food supply depends on crops from other world regions: the midpoint of the page's range, from UN food data for 177 countries.</p>
 <p class="open"><a href="https://mariuscomper.uk/radacinile-farfuriei/en/">Open Roots beneath the plate →</a></p>
 </div>
 <div class="side">
-<div class="card"><h3>Ask the room</h3><p class="body">Pick Ghana in the country list, then pick a crop you ate today. Where did it come from? What surprised you?</p></div>
-<div class="card remix"><h3>Ghana remix</h3><p class="body">Global datasets already include Ghana: NASA, the UN, the World Bank, OpenStreetMap. Start there before you ask anyone for data.</p></div>
+<div class="card"><div class="chead"><svg aria-label="question icon" width="44" height="44" viewBox="0 0 44 44" fill="none"><g transform="scale(1.83333)" stroke="#A8470B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.7.4-1 1-1 1.7"/><path d="M12 17h.01"/></g></svg><h3>Ask the room</h3></div><p class="body">Pick Ghana, then a crop you ate today. Where did it come from?</p></div>
+<div class="card remix"><div class="chead"><svg aria-label="star icon" width="44" height="44" viewBox="0 0 44 44" fill="none"><g transform="scale(1.83333)" stroke="#F2A65A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.7 5.6 6.1.8-4.5 4.3 1.1 6.1L12 16.9 6.6 19.8l1.1-6.1L3.2 9.4l6.1-.8z"/></g></svg><h3>Ghana remix</h3></div><p class="body">Global datasets already include Ghana: NASA, the UN, the World Bank, OpenStreetMap. Start there before you ask anyone for data.</p></div>
 </div>
 </div>
 </section>
@@ -227,13 +266,17 @@ a{color:#1B4FB8;text-decoration:underline}
 <h2>Taiwan turned the tax receipt into a lottery ticket</h2>
 <div class="split">
 <div class="fact">
-<p class="num">1951</p>
-<p class="lede">Receipt numbers were entered in prize draws, so customers asked for receipts. Business-tax revenue went from over NT$29 million to over NT$51 million in a year.</p>
+<div class="numrow"><div class="tile"><svg aria-label="ticket icon" width="60" height="60" viewBox="0 0 60 60" fill="none"><g transform="scale(2.5)" stroke="#10243E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v2a2 2 0 0 0 0 4v2a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-2a2 2 0 0 0 0-4z"/><path d="M14 9v.01M14 12v.01M14 15v.01"/></g></svg></div><p class="num">1951</p></div>
+<div class="chart">
+<div class="hrow"><p class="hl">Before</p><div class="hbar" style="width:239px"></div><p class="hv">over 29</p></div>
+<div class="hrow"><p class="hl">A year later</p><div class="hbar" style="width:420px"></div><p class="hv">over 51</p></div>
+</div>
+<p class="lede">Receipt numbers entered prize draws, so customers asked for receipts. Business-tax revenue, in NT$ million, one year apart.</p>
 <p class="open"><a href="https://mariuscomper.uk/loteria-bonurilor/en/">Open the receipt lottery story →</a></p>
 </div>
 <div class="side">
-<div class="card"><h3>Ask the room</h3><p class="body">No AI and no app in 1951. What was the actual innovation here?</p></div>
-<div class="card remix"><h3>Ghana remix</h3><p class="body">Which idea from another country would you test in your own district first, and how would you know it worked?</p></div>
+<div class="card"><div class="chead"><svg aria-label="question icon" width="44" height="44" viewBox="0 0 44 44" fill="none"><g transform="scale(1.83333)" stroke="#A8470B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.7.4-1 1-1 1.7"/><path d="M12 17h.01"/></g></svg><h3>Ask the room</h3></div><p class="body">No AI and no app in 1951. What was the actual innovation here?</p></div>
+<div class="card remix"><div class="chead"><svg aria-label="star icon" width="44" height="44" viewBox="0 0 44 44" fill="none"><g transform="scale(1.83333)" stroke="#F2A65A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.7 5.6 6.1.8-4.5 4.3 1.1 6.1L12 16.9 6.6 19.8l1.1-6.1L3.2 9.4l6.1-.8z"/></g></svg><h3>Ghana remix</h3></div><p class="body">Which idea from another country would you test in your own district first, and how would you know it worked?</p></div>
 </div>
 </div>
 </section>
@@ -242,13 +285,18 @@ a{color:#1B4FB8;text-decoration:underline}
 <h2>Is anyone still measuring the air?</h2>
 <div class="split">
 <div class="fact">
-<p class="num">25</p>
-<p class="lede">Romanian stations had valid nitrogen dioxide data for at least three quarters of 2024. In 2021 there were 134. The page shows, month by month, when each county&#x27;s record goes empty.</p>
+<div class="numrow"><div class="tile"><svg aria-label="wind icon" width="60" height="60" viewBox="0 0 60 60" fill="none"><g transform="scale(2.5)" stroke="#10243E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9h10a3 3 0 1 0-3-3"/><path d="M3 13h14a3 3 0 1 1-3 3"/><path d="M3 17h6"/></g></svg></div><p class="num">134 → 25</p></div>
+<div class="chart">
+<div class="hrow"><p class="hl">2021</p><div class="hbar" style="width:420px"></div><p class="hv">134</p></div>
+<div class="hrow"><p class="hl">2023</p><div class="hbar" style="width:91px"></div><p class="hv">29</p></div>
+<div class="hrow"><p class="hl">2024</p><div class="hbar" style="width:78px"></div><p class="hv">25</p></div>
+</div>
+<p class="lede">Romanian stations with valid nitrogen dioxide data for at least three quarters of the year.</p>
 <p class="open"><a href="https://mariuscomper.uk/aerul-nemasurat/en/">Open the air stations project →</a></p>
 </div>
 <div class="side">
-<div class="card"><h3>Ask the room</h3><p class="body">Before you trust a number, ask: is the sensor still switched on? What does an empty month tell you?</p></div>
-<div class="card remix"><h3>Ghana remix</h3><p class="body">Breathe Accra runs 50+ live air sensors and OpenAQ keeps the history. Which sensors went quiet, in which neighbourhoods, and for how long?</p></div>
+<div class="card"><div class="chead"><svg aria-label="question icon" width="44" height="44" viewBox="0 0 44 44" fill="none"><g transform="scale(1.83333)" stroke="#A8470B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.7.4-1 1-1 1.7"/><path d="M12 17h.01"/></g></svg><h3>Ask the room</h3></div><p class="body">Before you trust a number: is the sensor still switched on? What does an empty month tell you?</p></div>
+<div class="card remix"><div class="chead"><svg aria-label="star icon" width="44" height="44" viewBox="0 0 44 44" fill="none"><g transform="scale(1.83333)" stroke="#F2A65A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.7 5.6 6.1.8-4.5 4.3 1.1 6.1L12 16.9 6.6 19.8l1.1-6.1L3.2 9.4l6.1-.8z"/></g></svg><h3>Ghana remix</h3></div><p class="body">Breathe Accra runs 50+ live air sensors and OpenAQ keeps the history. Which sensors went quiet, where, and for how long?</p></div>
 </div>
 </div>
 </section>
@@ -257,13 +305,14 @@ a{color:#1B4FB8;text-decoration:underline}
 <h2>A river, traced every summer since 1984</h2>
 <div class="split">
 <div class="fact">
-<p class="num">¾</p>
-<p class="lede">of the Prut&#x27;s kilometres did not move measurably between 1984 and 2026. In three places the water took another path. You can look up any village on the border.</p>
+<div class="numrow"><div class="tile"><svg aria-label="waves icon" width="60" height="60" viewBox="0 0 60 60" fill="none"><g transform="scale(2.5)" stroke="#10243E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7c3-2 6 2 9 0s6 2 9 0"/><path d="M3 12c3-2 6 2 9 0s6 2 9 0"/><path d="M3 17c3-2 6 2 9 0s6 2 9 0"/></g></svg></div><p class="num">¾</p></div>
+<div class="chart"><div class="ptrack"><div class="pfill" style="width:570px"></div></div><p class="pl">of the Prut's kilometres did not move measurably, 1984 to 2026</p></div>
+<p class="lede">In three places the water took another path. You can look up any village on the border.</p>
 <p class="open"><a href="https://mariuscomper.uk/prutul-care-se-muta/en/">Open the moving river →</a></p>
 </div>
 <div class="side">
-<div class="card"><h3>Ask the room</h3><p class="body">Satellite photos are free and go back decades. What in your district would you want to compare, year against year?</p></div>
-<div class="card remix"><h3>Ghana remix</h3><p class="body">Sentinel-2 photographs Ghana every few days, for free. Pick one stretch of a river near galamsey and compare the same month, year by year.</p></div>
+<div class="card"><div class="chead"><svg aria-label="question icon" width="44" height="44" viewBox="0 0 44 44" fill="none"><g transform="scale(1.83333)" stroke="#A8470B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.7.4-1 1-1 1.7"/><path d="M12 17h.01"/></g></svg><h3>Ask the room</h3></div><p class="body">Satellite photos are free and go back decades. What in your district would you compare, year against year?</p></div>
+<div class="card remix"><div class="chead"><svg aria-label="star icon" width="44" height="44" viewBox="0 0 44 44" fill="none"><g transform="scale(1.83333)" stroke="#F2A65A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.7 5.6 6.1.8-4.5 4.3 1.1 6.1L12 16.9 6.6 19.8l1.1-6.1L3.2 9.4l6.1-.8z"/></g></svg><h3>Ghana remix</h3></div><p class="body">Sentinel-2 photographs Ghana every few days, for free. Pick one stretch of a river near galamsey and compare the same month, year by year.</p></div>
 </div>
 </div>
 </section>
@@ -272,13 +321,17 @@ a{color:#1B4FB8;text-decoration:underline}
 <h2>How far is the nearest counter?</h2>
 <div class="split">
 <div class="fact">
-<p class="num">537</p>
-<p class="lede">full post offices in Romania in November 2026, down from 898 in 2014. The map gives the distance from every village to its nearest counter, then and now.</p>
+<div class="numrow"><div class="tile"><svg aria-label="route icon" width="60" height="60" viewBox="0 0 60 60" fill="none"><g transform="scale(2.5)" stroke="#10243E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="6" r="2.5"/><path d="M8.5 18H14a3 3 0 0 0 0-6h-4a3 3 0 0 1 0-6h5.5"/></g></svg></div><p class="num">537</p></div>
+<div class="chart">
+<div class="hrow"><p class="hl">2014</p><div class="hbar" style="width:420px"></div><p class="hv">898</p></div>
+<div class="hrow"><p class="hl">Nov 2026</p><div class="hbar" style="width:251px"></div><p class="hv">537</p></div>
+</div>
+<p class="lede">full post offices left in Romania. The map gives the distance from every village to its nearest counter, then and now.</p>
 <p class="open"><a href="https://mariuscomper.uk/satul-fara-posta/en/">Open the post office map →</a></p>
 </div>
 <div class="side">
-<div class="card"><h3>Ask the room</h3><p class="body">A service can stay open on paper and still move further away. Who notices first?</p></div>
-<div class="card remix"><h3>Ghana remix</h3><p class="body">OpenStreetMap holds Ghana&#x27;s clinics and schools, and the 2021 census gives people per district. Which communities are furthest from a clinic?</p></div>
+<div class="card"><div class="chead"><svg aria-label="question icon" width="44" height="44" viewBox="0 0 44 44" fill="none"><g transform="scale(1.83333)" stroke="#A8470B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.7.4-1 1-1 1.7"/><path d="M12 17h.01"/></g></svg><h3>Ask the room</h3></div><p class="body">A service can stay open on paper and still move further away. Who notices first?</p></div>
+<div class="card remix"><div class="chead"><svg aria-label="star icon" width="44" height="44" viewBox="0 0 44 44" fill="none"><g transform="scale(1.83333)" stroke="#F2A65A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.7 5.6 6.1.8-4.5 4.3 1.1 6.1L12 16.9 6.6 19.8l1.1-6.1L3.2 9.4l6.1-.8z"/></g></svg><h3>Ghana remix</h3></div><p class="body">OpenStreetMap holds Ghana's clinics and schools, and the 2021 census gives people per district. Which communities are furthest from a clinic?</p></div>
 </div>
 </div>
 </section>
@@ -287,13 +340,14 @@ a{color:#1B4FB8;text-decoration:underline}
 <h2>The price went up. What is behind the bill?</h2>
 <div class="split">
 <div class="fact">
-<p class="num">22.5%</p>
-<p class="lede">more for water and sewerage in Bucharest from 1 November 2026. Behind it is a 774-row investment list, read row by row, and one official total that is 149.9 million lei short of adding up.</p>
+<div class="numrow"><div class="tile"><svg aria-label="calculator icon" width="60" height="60" viewBox="0 0 60 60" fill="none"><g transform="scale(2.5)" stroke="#10243E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><rect x="8" y="5" width="8" height="4"/><path d="M8 13h.01M12 13h.01M16 13h.01M8 17h.01M12 17h.01M16 17h.01"/></g></svg></div><p class="num">22.5%</p></div>
+
+<p class="lede">more for water and sewerage in Bucharest from 1 November 2026. Behind it: a 774-row investment list, and one official total that is 149.9 million lei short of adding up.</p>
 <p class="open"><a href="https://mariuscomper.uk/factura-subterana/en/">Open the water bill project →</a></p>
 </div>
 <div class="side">
-<div class="card"><h3>Ask the room</h3><p class="body">Nobody leaked anything here. The document was public. Why had nobody added up the column?</p></div>
-<div class="card remix"><h3>Ghana remix</h3><p class="body">When a tariff or a fee goes up, ask for the document behind it under the Right to Information Act, 2019. Let AI turn the tables into a spreadsheet, then add them up yourself.</p></div>
+<div class="card"><div class="chead"><svg aria-label="question icon" width="44" height="44" viewBox="0 0 44 44" fill="none"><g transform="scale(1.83333)" stroke="#A8470B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.7.4-1 1-1 1.7"/><path d="M12 17h.01"/></g></svg><h3>Ask the room</h3></div><p class="body">Nobody leaked anything. The document was public. Why had nobody added up the column?</p></div>
+<div class="card remix"><div class="chead"><svg aria-label="star icon" width="44" height="44" viewBox="0 0 44 44" fill="none"><g transform="scale(1.83333)" stroke="#F2A65A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.7 5.6 6.1.8-4.5 4.3 1.1 6.1L12 16.9 6.6 19.8l1.1-6.1L3.2 9.4l6.1-.8z"/></g></svg><h3>Ghana remix</h3></div><p class="body">When a tariff or fee goes up, ask for the document behind it under the Right to Information Act, 2019. Let AI turn the tables into a spreadsheet, then add them up yourself.</p></div>
 </div>
 </div>
 </section>
@@ -302,13 +356,14 @@ a{color:#1B4FB8;text-decoration:underline}
 <h2>How many days from request to permit?</h2>
 <div class="split">
 <div class="fact">
-<p class="num">5,065</p>
-<p class="lede">building permits issued by Cluj-Napoca city hall from January 2022 to 11 November 2026, on a map, each with the days between the registered request and the permit.</p>
+<div class="numrow"><div class="tile"><svg aria-label="calendar icon" width="60" height="60" viewBox="0 0 60 60" fill="none"><g transform="scale(2.5)" stroke="#10243E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></g></svg></div><p class="num">5,065</p></div>
+
+<p class="lede">building permits in Cluj-Napoca, January 2022 to 11 November 2026, each mapped with the days from request to permit.</p>
 <p class="open"><a href="https://mariuscomper.uk/autorizatii-de-construire-cluj/en/">Open the permits map →</a></p>
 </div>
 <div class="side">
-<div class="card"><h3>Ask the room</h3><p class="body">Two dates per case are enough to measure a public service. Which office near you would you time?</p></div>
-<div class="card remix"><h3>Ghana remix</h3><p class="body">Start from your phone: ask your WhatsApp group for two dates, applied and received, for one document. Tally the days. Twenty answers already tell a story.</p></div>
+<div class="card"><div class="chead"><svg aria-label="question icon" width="44" height="44" viewBox="0 0 44 44" fill="none"><g transform="scale(1.83333)" stroke="#A8470B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.7.4-1 1-1 1.7"/><path d="M12 17h.01"/></g></svg><h3>Ask the room</h3></div><p class="body">Two dates per case are enough to measure a public service. Which office near you would you time?</p></div>
+<div class="card remix"><div class="chead"><svg aria-label="star icon" width="44" height="44" viewBox="0 0 44 44" fill="none"><g transform="scale(1.83333)" stroke="#F2A65A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.7 5.6 6.1.8-4.5 4.3 1.1 6.1L12 16.9 6.6 19.8l1.1-6.1L3.2 9.4l6.1-.8z"/></g></svg><h3>Ghana remix</h3></div><p class="body">Ask your WhatsApp group for two dates, applied and received, for one document. Tally the days. Twenty answers already tell a story.</p></div>
 </div>
 </div>
 </section>
@@ -316,24 +371,25 @@ a{color:#1B4FB8;text-decoration:underline}
 <p class="kicker">Why would anyone believe you?</p>
 <h2>Five habits to copy from these projects</h2>
 <div class="rows">
-<div class="row"><p class="rown">1</p><p class="rowt"><b>Name the source.</b> NASA, OpenStreetMap, the public register. Let people check you.</p></div>
-<div class="row"><p class="rown">2</p><p class="rowt"><b>Put a date on it.</b> Data ages. Say when you measured and when you updated.</p></div>
-<div class="row"><p class="rown">3</p><p class="rowt"><b>Show unknown as unknown.</b> A gap is information. A guess is a risk.</p></div>
-<div class="row"><p class="rown">4</p><p class="rowt"><b>Say what it cannot tell you.</b> A pattern in data is not proof about one person.</p></div>
-<div class="row"><p class="rown">5</p><p class="rowt"><b>Count everything, not one case.</b> A full list is fairer than a single scandal.</p></div>
+<div class="row"><p class="rown">1</p><div class="tile sm"><svg aria-label="link icon" width="36" height="36" viewBox="0 0 36 36" fill="none"><g transform="scale(1.5)" stroke="#10243E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></g></svg></div><p class="rowt"><b>Name the source.</b> Let people check you.</p></div>
+<div class="row"><p class="rown">2</p><div class="tile sm"><svg aria-label="clock icon" width="36" height="36" viewBox="0 0 36 36" fill="none"><g transform="scale(1.5)" stroke="#10243E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></g></svg></div><p class="rowt"><b>Put a date on it.</b> Data ages.</p></div>
+<div class="row"><p class="rown">3</p><div class="tile sm"><svg aria-label="question icon" width="36" height="36" viewBox="0 0 36 36" fill="none"><g transform="scale(1.5)" stroke="#10243E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.7.4-1 1-1 1.7"/><path d="M12 17h.01"/></g></svg></div><p class="rowt"><b>Show unknown as unknown.</b> A gap is information. A guess is a risk.</p></div>
+<div class="row"><p class="rown">4</p><div class="tile sm"><svg aria-label="warning icon" width="36" height="36" viewBox="0 0 36 36" fill="none"><g transform="scale(1.5)" stroke="#10243E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4l9 16H3z"/><path d="M12 10v5M12 17.5h.01"/></g></svg></div><p class="rowt"><b>Say what it cannot tell you.</b> A pattern is not proof about one person.</p></div>
+<div class="row"><p class="rown">5</p><div class="tile sm"><svg aria-label="list icon" width="36" height="36" viewBox="0 0 36 36" fill="none"><g transform="scale(1.5)" stroke="#10243E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 6h12M8 12h12M8 18h12M4 6h.01M4 12h.01M4 18h.01"/></g></svg></div><p class="rowt"><b>Count everything, not one case.</b> A full list is fairer than one scandal.</p></div>
 </div>
 </section>
 <section id="roles" data-transition="fade">
 <p class="kicker">Division of labour</p>
 <h2>What the AI does, and what stays with you</h2>
 <div class="two">
-<div class="card"><h3>Let the AI do</h3>
-<ul class="list"><li>Read 300 pages and find the rule</li><li>Clean a messy table or scanned list</li><li>Write the code for a map or calculator</li><li>Draft, translate and simplify</li></ul></div>
-<div class="card strong"><h3>You stay in charge of</h3>
-<ul class="list"><li>Choosing a question that matters here</li><li>Checking every number against the source</li><li>Protecting people&#39;s names and privacy</li><li>Deciding what is fair to publish</li></ul></div>
+<div class="card"><div class="chead"><div class="tile"><svg aria-label="robot icon" width="60" height="60" viewBox="0 0 60 60" fill="none"><g transform="scale(2.5)" stroke="#10243E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="8" width="14" height="11" rx="2"/><path d="M12 4v4M9.5 13h.01M14.5 13h.01M10 16h4M2.5 12v3M21.5 12v3"/></g></svg></div><h3>Let the AI do</h3></div>
+<ul class="list"><li>Read 300 pages and find the rule</li><li>Clean a messy table or scan</li><li>Write the code for a map</li><li>Draft, translate, simplify</li></ul></div>
+<div class="card strong"><div class="chead"><div class="tile"><svg aria-label="user icon" width="60" height="60" viewBox="0 0 60 60" fill="none"><g transform="scale(2.5)" stroke="#10243E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></g></svg></div><h3>You stay in charge of</h3></div>
+<ul class="list"><li>Choosing a question that matters here</li><li>Checking every number at the source</li><li>Protecting names and privacy</li><li>Deciding what is fair to publish</li></ul></div>
 </div>
 </section>
 <section id="break" class="accent center" data-transition="fade">
+<div class="tile navy"><svg aria-label="coffee icon" width="60" height="60" viewBox="0 0 60 60" fill="none"><g transform="scale(2.5)" stroke="#F6F1E7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 9h12v5a5 5 0 0 1-5 5h-2a5 5 0 0 1-5-5z"/><path d="M17 10h1.5a2.5 2.5 0 0 1 0 5H17M8 3v3M12 3v3"/></g></svg></div>
 <p class="kicker">Break · 5 minutes</p>
 <h1>Back in five.</h1>
 <p class="sub">While you stretch: what is one public problem within 500 metres of your home?</p>
@@ -341,25 +397,26 @@ a{color:#1B4FB8;text-decoration:underline}
 <section id="exercise" data-transition="fade">
 <p class="kicker">Team exercise · 30 minutes</p>
 <h2>Remix it for Ghana</h2>
-<p class="lede wide">Take one demo, or your own problem, and design the Ghanaian version using data that already exists or that you can collect with a phone. You are writing the plan someone could build tomorrow.</p>
+<p class="lede wide">Take one demo, or your own problem, and design the Ghanaian version with data that exists or that a phone can collect.</p>
+<div class="timebar"><div class="seg s1" style="width:164px"></div><div class="seg s2" style="width:820px"></div><div class="seg s3" style="width:547px"></div><div class="seg s4" style="width:109px"></div></div>
 <div class="timeline">
-<div class="step"><p class="stepn">3 min</p><h3>Brief</h3><p class="body">Teams of 4 or 5. Pick a note-taker and a speaker.</p></div>
-<div class="step"><p class="stepn">15 min</p><h3>Build the card</h3><p class="body">Fill the six boxes. Use any AI chatbot as a partner.</p></div>
-<div class="step"><p class="stepn">10 min</p><h3>Pitch</h3><p class="body">60 seconds per team. Question first, then the format.</p></div>
-<div class="step"><p class="stepn">2 min</p><h3>Vote</h3><p class="body">In chat: which one should exist by next month?</p></div>
+<div class="step"><div class="chead"><div class="tile sm"><svg aria-label="users icon" width="36" height="36" viewBox="0 0 36 36" fill="none"><g transform="scale(1.5)" stroke="#10243E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6"/><circle cx="17" cy="9" r="2.5"/><path d="M17.5 14c2.5.3 4 2.2 4 5"/></g></svg></div><p class="stepn">3 min</p></div><h3>Brief</h3><p class="body">Teams of 4 or 5. Pick a note-taker and a speaker.</p></div>
+<div class="step"><div class="chead"><div class="tile sm"><svg aria-label="layout icon" width="36" height="36" viewBox="0 0 36 36" fill="none"><g transform="scale(1.5)" stroke="#10243E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M10 10v10"/></g></svg></div><p class="stepn">15 min</p></div><h3>Build the card</h3><p class="body">Fill the six boxes. Use any AI chatbot as a partner.</p></div>
+<div class="step"><div class="chead"><div class="tile sm"><svg aria-label="megaphone icon" width="36" height="36" viewBox="0 0 36 36" fill="none"><g transform="scale(1.5)" stroke="#10243E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10v4h3l8 4V6l-8 4z"/><path d="M18 9.5a3.5 3.5 0 0 1 0 5"/></g></svg></div><p class="stepn">10 min</p></div><h3>Pitch</h3><p class="body">60 seconds per team. Question first, then the format.</p></div>
+<div class="step"><div class="chead"><div class="tile sm"><svg aria-label="thumb icon" width="36" height="36" viewBox="0 0 36 36" fill="none"><g transform="scale(1.5)" stroke="#10243E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 11v9H4v-9z"/><path d="M7 11l4-7a2 2 0 0 1 2 2v4h5a2 2 0 0 1 2 2.3l-1 6a2 2 0 0 1-2 1.7H7"/></g></svg></div><p class="stepn">2 min</p></div><h3>Vote</h3><p class="body">In chat: which one should exist by next month?</p></div>
 </div>
 </section>
 <section id="ghana" data-transition="fade">
 <p class="kicker">What Ghana already has</p>
 <h2>Four places the data is waiting</h2>
 <div class="grid4">
-<div class="card"><h3>From space</h3>
+<div class="card"><div class="chead"><div class="tile sm"><svg aria-label="orbit icon" width="36" height="36" viewBox="0 0 36 36" fill="none"><g transform="scale(1.5)" stroke="#10243E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="2.5"/><ellipse cx="12" cy="12" rx="10" ry="4.5" transform="rotate(-30 12 12)"/></g></svg></div><h3>From space</h3></div>
 <ul class="list"><li>NASA night lights: where the power goes out</li><li>Sentinel-2 photos: galamsey, floods, new buildings</li><li>NASA temperature and rainfall records</li></ul></div>
-<div class="card"><h3>From the crowd</h3>
+<div class="card"><div class="chead"><div class="tile sm"><svg aria-label="users icon" width="36" height="36" viewBox="0 0 36 36" fill="none"><g transform="scale(1.5)" stroke="#10243E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6"/><circle cx="17" cy="9" r="2.5"/><path d="M17.5 14c2.5.3 4 2.2 4 5"/></g></svg></div><h3>From the crowd</h3></div>
 <ul class="list"><li>OpenStreetMap: roads, clinics, schools, drains</li><li>Trotro routes: 270+ lines, 4,000+ stops</li><li>Breathe Accra: 50+ live air sensors</li></ul></div>
-<div class="card"><h3>From the state</h3>
+<div class="card"><div class="chead"><div class="tile sm"><svg aria-label="building icon" width="36" height="36" viewBox="0 0 36 36" fill="none"><g transform="scale(1.5)" stroke="#10243E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V10M19 21V10M9 21V10M15 21V10"/><path d="M2 10l10-6 10 6z"/></g></svg></div><h3>From the state</h3></div>
 <ul class="list"><li>2021 census, district by district</li><li>GHANEPS: tenders and awarded contracts</li><li>Auditor-General reports, as PDFs</li></ul></div>
-<div class="card strong"><h3>From your phone</h3>
+<div class="card strong"><div class="chead"><div class="tile sm"><svg aria-label="phone icon" width="36" height="36" viewBox="0 0 36 36" fill="none"><g transform="scale(1.5)" stroke="#10243E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></g></svg></div><h3>From your phone</h3></div>
 <ul class="list"><li>Time it, count it, photograph it, date it</li><li>Poll your WhatsApp group and tally it</li><li>Ask officially: Right to Information Act, 2019</li></ul></div>
 </div>
 </section>
@@ -367,17 +424,17 @@ a{color:#1B4FB8;text-decoration:underline}
 <p class="kicker">Your one-page civic project card</p>
 <h2>Six boxes. Fifteen minutes.</h2>
 <div class="grid6">
-<div class="card"><p class="tag">1 · Problem</p><p class="body">What goes wrong, where, and for whom?</p></div>
-<div class="card"><p class="tag">2 · Question</p><p class="body">One sentence, with a number in the answer.</p></div>
-<div class="card"><p class="tag">3 · Data</p><p class="body">Space, crowd, state or your phone: which one has it?</p></div>
-<div class="card"><p class="tag">4 · Format</p><p class="body">Map, checker, audit, game, simulation or explainer?</p></div>
-<div class="card"><p class="tag">5 · User</p><p class="body">Who opens it, on what phone, and what do they do next?</p></div>
-<div class="card"><p class="tag">6 · Risk</p><p class="body">What could be wrong or unfair, and how will you check?</p></div>
+<div class="card"><div class="chead"><div class="tile sm"><svg aria-label="warning icon" width="36" height="36" viewBox="0 0 36 36" fill="none"><g transform="scale(1.5)" stroke="#10243E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4l9 16H3z"/><path d="M12 10v5M12 17.5h.01"/></g></svg></div><p class="tag">1 · Problem</p></div><p class="body">What goes wrong, where, and for whom?</p></div>
+<div class="card"><div class="chead"><div class="tile sm"><svg aria-label="question icon" width="36" height="36" viewBox="0 0 36 36" fill="none"><g transform="scale(1.5)" stroke="#10243E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.7.4-1 1-1 1.7"/><path d="M12 17h.01"/></g></svg></div><p class="tag">2 · Question</p></div><p class="body">One sentence, with a number in the answer.</p></div>
+<div class="card"><div class="chead"><div class="tile sm"><svg aria-label="database icon" width="36" height="36" viewBox="0 0 36 36" fill="none"><g transform="scale(1.5)" stroke="#10243E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="6" rx="7" ry="3"/><path d="M5 6v12c0 1.7 3.1 3 7 3s7-1.3 7-3V6"/><path d="M5 12c0 1.7 3.1 3 7 3s7-1.3 7-3"/></g></svg></div><p class="tag">3 · Data</p></div><p class="body">Space, crowd, state or your phone: which one has it?</p></div>
+<div class="card"><div class="chead"><div class="tile sm"><svg aria-label="layout icon" width="36" height="36" viewBox="0 0 36 36" fill="none"><g transform="scale(1.5)" stroke="#10243E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M10 10v10"/></g></svg></div><p class="tag">4 · Format</p></div><p class="body">Map, checker, audit, game, simulation or explainer?</p></div>
+<div class="card"><div class="chead"><div class="tile sm"><svg aria-label="user icon" width="36" height="36" viewBox="0 0 36 36" fill="none"><g transform="scale(1.5)" stroke="#10243E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></g></svg></div><p class="tag">5 · User</p></div><p class="body">Who opens it, on what phone, and what do they do next?</p></div>
+<div class="card"><div class="chead"><div class="tile sm"><svg aria-label="shield icon" width="36" height="36" viewBox="0 0 36 36" fill="none"><g transform="scale(1.5)" stroke="#10243E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 5-3 8.5-7 10-4-1.5-7-5-7-10V6z"/><path d="M9 12l2 2 4-4"/></g></svg></div><p class="tag">6 · Risk</p></div><p class="body">What could be wrong or unfair, and how will you check?</p></div>
 </div>
 </section>
 <section id="prompt" class="dark" data-transition="fade">
 <p class="kicker">Starter prompt · paste into any AI chatbot</p>
-<h2>Make the AI your project partner</h2>
+<div class="chead"><div class="tile sm"><svg aria-label="chat icon" width="36" height="36" viewBox="0 0 36 36" fill="none"><g transform="scale(1.5)" stroke="#10243E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H10l-5 4v-4H4z"/></g></svg></div><h2>Make the AI your project partner</h2></div>
 <div class="promptbox">
 <p class="mono">Act as a civic data partner. My community problem is: [problem, place].</p>
 <p class="mono">Help me turn it into one question with a number in the answer. Suggest three public data sources I could check, the best format (map, checker, audit, game or simulation), and what could mislead people.</p>
@@ -389,8 +446,9 @@ a{color:#1B4FB8;text-decoration:underline}
 <div class="bar"></div>
 <p class="kicker">Before you go</p>
 <h1>One question. One dataset. One page.</h1>
-<p class="sub">This week, finish your team&#39;s card and build the smallest version with an AI assistant. Then send it to somebody who can use it.</p>
+<p class="sub">This week, finish your team's card and build the smallest version with an AI assistant. Then send it to somebody who can use it.</p>
 <div class="grow"></div>
+<div class="strip"><div class="tile sm"><svg aria-label="map icon" width="36" height="36" viewBox="0 0 36 36" fill="none"><g transform="scale(1.5)" stroke="#10243E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6l6-2 6 2 6-2v14l-6 2-6-2-6 2z"/><path d="M9 4v14M15 6v14"/></g></svg></div><div class="tile sm"><svg aria-label="search icon" width="36" height="36" viewBox="0 0 36 36" fill="none"><g transform="scale(1.5)" stroke="#10243E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5"/></g></svg></div><div class="tile sm"><svg aria-label="checklist icon" width="36" height="36" viewBox="0 0 36 36" fill="none"><g transform="scale(1.5)" stroke="#10243E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6l1.5 1.5L8 5M11 6h9M4 12l1.5 1.5L8 11M11 12h9M4 18l1.5 1.5L8 17M11 18h9"/></g></svg></div><div class="tile sm"><svg aria-label="sliders icon" width="36" height="36" viewBox="0 0 36 36" fill="none"><g transform="scale(1.5)" stroke="#10243E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h9M19 6h1M4 12h3M13 12h7M4 18h11"/><circle cx="16" cy="6" r="2"/><circle cx="10" cy="12" r="2"/><circle cx="18" cy="18" r="2"/></g></svg></div><div class="tile sm"><svg aria-label="dice icon" width="36" height="36" viewBox="0 0 36 36" fill="none"><g transform="scale(1.5)" stroke="#10243E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M9 9h.01M15 9h.01M12 12h.01M9 15h.01M15 15h.01"/></g></svg></div><div class="tile sm"><svg aria-label="doc icon" width="36" height="36" viewBox="0 0 36 36" fill="none"><g transform="scale(1.5)" stroke="#10243E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5M10 13h6M10 17h6"/></g></svg></div></div>
 <p class="meta">Explore more: <a href="https://mariuscomper.uk/en/public-life/">mariuscomper.uk/en/public-life</a> · Send him an idea: <a href="https://mariuscomper.uk/en/collaborate/">mariuscomper.uk/en/collaborate</a></p>
 <p class="meta">Florin Badita · <a href="mailto:baditaflorin@gmail.com">baditaflorin@gmail.com</a> · <a href="https://www.linkedin.com/in/baditaflorin">linkedin.com/in/baditaflorin</a></p>
 </section>
